@@ -1,11 +1,11 @@
 import NavBar from '../Navbar/NavBar'
-import ImgCarousel from './ImgCarousel'
+import Example from './ImgCarousel3'
 
 function HomePage() {
     return (
         <>
             <NavBar />
-            <ImgCarousel />
+            <Example />
         </>
     )
 }

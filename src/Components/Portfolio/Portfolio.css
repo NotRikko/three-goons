@@ -20,7 +20,7 @@
 
 .imageContainer img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     filter: brightness(30%);
 
 }
@@ -48,4 +48,65 @@
 #categoryPics img:hover {
     filter: brightness(85%);
 
+}
+
+@media (orientation: portrait) and (max-width: 1100px) {
+    #categoryPics {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 100px;
+        height: calc((100vh - 100px))
+    }
+
+    .imageContainer {
+        height: calc((100vh - 100px) / 3); 
+    }
+
+    .imageContainer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease; 
+    }
+
+    .imageContainer:hover::before {
+        opacity: 0; 
+    }
+
+    .imageContainer h2 {
+        opacity: 1;
+    }
+
+    
+    #wedding {
+        background-image: url('https://www.luxurylifestylemag.co.uk/wp-content/uploads/2022/10/bigstock-Wedding-Couple-Holds-Each-Othe-461994545.jpg');
+        background-position: center;
+    }
+
+    #model {
+        background-image: url('https://w0.peakpx.com/wallpaper/839/509/HD-wallpaper-women-model-landscape-white-dress-countryside-women-girls-model.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    #landscape {
+        background-image: url('https://i.pinimg.com/736x/27/ca/df/27cadf4e6aca954c0ea5c4cb27eee6b7.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .imageContainer img {
+        height: 100%;
+        opacity: 0;
+    }
+
+    
+    
 }
