@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=GFS+Didot&display=swap');
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav > * {
+    display: flex;
+    align-items: center;
+}
+
+
+#logo {
+    max-width: 65px;
+}
+
+#logoText {
+    font-family: 'GFS-Didot, serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    gap: 50px;
+    font-family: "Antic Didone", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+}
