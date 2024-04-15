@@ -1,5 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=GFS+Didot&display=swap');
+
+
 #portfolioMain {
     background-color: black;
     width: 100vw;
+    overflow: hidden;
+}
+
+#categoryPics {
+    display: flex;
+    width: 100vw;
+    height: 100vh;    
+}
+
+.imageContainer {
+    flex: 1;
+    position: relative;
+}
+
+.imageContainer img {
+    width: 100%;
     height: 100vh;
+    filter: brightness(30%);
+
+}
+
+.imageContainer h2 {
+    position: absolute;
+    font-family: "Antic Didone", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    color: white;
+    padding: 10px;
+    transition: opacity .5s ease;
+
+}
+
+.imageContainer:hover h2 {
+    opacity: 1; 
+}
+
+#categoryPics img:hover {
+    filter: brightness(85%);
+
 }
