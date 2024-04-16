@@ -21,9 +21,24 @@
 
 .profile {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 50px;
+    align-items: center;
+    justify-content: center;
     color: white;
     margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
