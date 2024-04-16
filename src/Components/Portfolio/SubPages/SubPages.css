@@ -1,0 +1,30 @@
+.subPageMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    gap: 50px;
+
+}
+
+.subPageMain h1 {
+    color: white;
+    font-size: 40px;
+
+}
+
+.subPage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+
+.subPage img {
+    width: 350px;
+    height: 450px;
+}
+

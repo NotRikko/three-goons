@@ -14,7 +14,9 @@ function NavBar() {
                 <li>
                     <NavLink exact to="/portfolio">Portfolio</NavLink>
                 </li>
-                <li>Contact</li>
+                <li>
+                    <NavLink exact to="/contact">Contact</NavLink>
+                </li>
             </ul>
         </nav>
     )
